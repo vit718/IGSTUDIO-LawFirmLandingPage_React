@@ -1,8 +1,20 @@
 
 .common-padding{
-    padding: 0 5rem;
+    padding: 0 10rem;
 }
 
+/* screens below 1375px */
+@media screen and (max-width: 1375px){
+    .common-padding{
+        padding: 0 8rem;
+    }
+}
+/* screens below 1100px */
+@media screen and (max-width: 1100px){
+    .common-padding{
+        padding: 0 5rem;
+    }
+}
 /* screens below 900px */
 @media screen and (max-width: 900px){
     .common-padding{

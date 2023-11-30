@@ -1,0 +1,169 @@
+
+.home{
+    background-color: #111;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homeTexts{
+    width: 55%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.homeTexts h1{
+    font-size: 66px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+.h1-highlight{
+    font-weight: 800;
+}
+
+.homeTexts p{
+    opacity: 0.3;
+    font-size: 18px;
+    line-height: 162.523%;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.homeTexts form{
+    height: 74px;
+    width: 438px;
+    border-radius: 43px;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+.formPart1{
+    display: flex;
+}
+.homeTexts form img{
+    margin-left: 1rem;
+    opacity: 0.3;
+}
+.homeTexts input{
+    background-color: inherit;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-left: 0.5rem;
+}
+.formButton{
+    background-color: var(--color-primary);
+    border: none;
+    outline: none;
+    border-radius: 43px;
+    padding: 0.75rem 1rem;
+    /* width: 25%; */
+    /* width: 137px; */
+    height: 100%;
+    color: #000;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.homeImageContainer{
+    width: 467.71px;
+    border-radius: 55px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: flex-end;
+    aspect-ratio: 1;
+    background: url("../../assets/attorneyImageBack.png"), var(--color-primary) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+.homeImageContainer img{
+    position: absolute;
+    bottom: 2rem;
+    width: 467.71px;
+}
+
+
+/* screens below 1375px */
+@media screen and (max-width: 1375px) and (min-width: 900px){
+    .homeTexts h1{
+        font-size: 48px;
+    }
+    .homeTexts p{
+        opacity: 0.3;
+        font-size: 16px;
+    }
+}
+
+/* screens below 900px */
+@media screen and (max-width: 900px){
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .homeTexts{
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+    }
+    .homeTexts h1{
+        font-size: 48px;
+    }
+    .homeTexts p{
+        opacity: 0.3;
+        font-size: 16px;
+    }
+    .homeTexts form{
+        font-size: 16px;
+    }
+    .homeImageContainer{
+        width: 35%;
+        align-self: center;
+    }
+    .homeImageContainer img{
+        position: absolute;
+        bottom: 1rem;
+    }
+}
+
+/* screens below 600px */
+@media screen and (max-width: 600px){
+    .homeTexts h1{
+        font-size: 32px;
+    }
+    .homeTexts p{
+        opacity: 0.3;
+        font-size: 16px;
+    }
+    .homeImageContainer{
+        width: 50%;
+    }
+}
+
+/* screens below 500px */
+@media screen and (max-width: 500px){
+    .homeTexts form{
+        height: 64px;
+        width: 95%;
+        font-size: 12px;
+    }
+    .formPart1{
+        width: 70%;
+        /* background-color: red; */
+    }
+    .homeTexts form img{
+        margin-left: 0.25rem;
+    }
+    .formButton{
+        padding: 0 0.25rem;
+        width: 30%;
+    }
+}

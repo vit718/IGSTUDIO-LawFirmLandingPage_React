@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 //components
 import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
 //styles
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Navbar />
-    </div>
+      <Home />
+    </main>
   );
 }
 
