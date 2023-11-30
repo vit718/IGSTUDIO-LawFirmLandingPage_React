@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 100px;
 }
 .homeTexts{
     width: 55%;
@@ -88,6 +89,7 @@
     position: absolute;
     bottom: 2rem;
     width: 467.71px;
+    z-index: 12;
 }
 
 

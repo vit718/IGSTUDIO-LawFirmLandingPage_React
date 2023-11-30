@@ -6,7 +6,10 @@ nav{
     /* padding: 2rem 0; */
     text-transform: capitalize;
     height: 100px;
+    width: 100vw;
     background-color: #111;
+    position: fixed;
+    z-index: 20;
 }
 .logoSpan {
     display: flex;
