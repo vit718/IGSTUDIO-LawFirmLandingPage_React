@@ -7,6 +7,7 @@ const NavbarMenu = () => {
     const [menuPosition, setMenuPosition] = useState("");
     //functions
     const handleClick = ()=>{
+        console.log("aaaa")
         setMenuPosition(pre=> pre === "menuCentre" ? "menuRight" : "menuCentre");
     }
 

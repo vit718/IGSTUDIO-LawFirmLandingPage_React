@@ -20,7 +20,7 @@
     width: 100vw;
     display: none;
     flex-direction: column;
-    z-index: 1;
+    z-index: 10;
     transform: translateX(100%);
 }
 .menuLink{
@@ -51,7 +51,12 @@
 .menuLink5{
     animation-delay: 250ms;
 }
-
+.dummyForNavbarMenu{
+    width: 100vw;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.192);
+    animation-duration: 0ms;
+}
 
 @media only screen and (max-width: 900px){
     .navbarLink{
