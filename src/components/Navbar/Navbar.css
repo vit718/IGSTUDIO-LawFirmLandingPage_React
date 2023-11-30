@@ -1,0 +1,52 @@
+
+nav{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    /* padding: 2rem 0; */
+    text-transform: capitalize;
+    height: 100px;
+    background-color: #111;
+}
+.logoSpan {
+    display: flex;
+}
+.linksList{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.linksList a{
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+.contactUsButtonContainer{
+    display: flex;
+    align-items: center;
+}
+.contactUsButton{
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
+}
+a{
+    transition: all 250ms;
+}
+a:hover{
+    background-color: var(--color-black);
+}
+
+
+/* screens below 982px */
+@media screen and (max-width: 982px) and (min-width: 900px){
+    .linksList a{
+        padding: 0 1rem;
+    }
+}
+
+/* screens below 900px */
+@media screen and (max-width: 900px){
+    .linksList-large, .contactUsButtonContainer-large{
+        display: none;
+    }
+}

@@ -1,0 +1,85 @@
+
+
+.menuButton{
+    display: none;
+    /* padding: 1rem 2rem; */
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.menuButton img{
+    max-width: 50px;
+}
+
+.menuItems{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+    transform: translateX(100%);
+}
+.menuLink{
+    color: #fff;
+    cursor: pointer;
+    /* margin: 0 2rem; */
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ffffff34;
+    background-color: #11111170;
+}
+.menuRight{
+    transform: translateX(-100%);
+    animation: slideRight 300ms forwards;
+}
+.menuCentre{
+    /* transform: translateX(100%); */
+    animation: slideCenter 300ms forwards;
+}
+.menuLink2{
+    animation-delay: 100ms;
+}
+.menuLink3{
+    animation-delay: 150ms;
+}
+.menuLink4{
+    animation-delay: 200ms;
+}
+.menuLink5{
+    animation-delay: 250ms;
+}
+
+
+@media only screen and (max-width: 900px){
+    .navbarLink{
+        display: none;
+    }
+    .menuButton{
+        display: flex;
+    }
+    .menuItems{
+        display: flex;
+    }
+    .dummyForMenuExit{
+        display: block;
+    }
+}
+
+@keyframes slideCenter {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideRight {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
