@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 //styles
 import './App.css';
 import About from './components/About/About';
+import PracticeAreas from './components/PracticeAreas/PracticeAreas';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <PracticeAreas />
     </main>
   );
 }
