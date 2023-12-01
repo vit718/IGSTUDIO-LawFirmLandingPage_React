@@ -21,7 +21,7 @@
     width: 45%;
 }
 .whyChooseUs{
-    padding: 5rem 0;
+    padding-top: 2.5rem 0;
 }
 .introPartition{
     height: 200px;
@@ -46,7 +46,7 @@
 .whyChooseUs h2{
     width: 100%;
     text-align: center;
-    margin-bottom: 5rem;
+    /* margin-bottom: 1rem; */
 }
 .whyChooseUsCard-wrapper{
     display: flex;
@@ -137,10 +137,11 @@
 @media screen and (max-width: 500px){
     .aboutIntro{
         flex-direction: column;
+        align-items: flex-start;
         padding: 2rem 0;
     }
     .aboutIntro h2, .criminalLawyer{
-        width: 75%;
+        width: 100%;
     }
     .introPartition{
         height: 0;

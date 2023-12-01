@@ -1,0 +1,39 @@
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    width: 100vw;
+    position: relative;
+}
+.testimonialsHead{
+    /* margin: 2rem 0; */
+}
+.testimonialsHead h2{
+    display: flex;
+    flex-direction: column;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 143.023%;
+}
+
+
+
+/* screens below 900px */
+@media screen and (max-width: 900px){
+    .testimonialsHead h2{
+        font-size: 32px;
+    }
+}
+/* screens below 600px */
+@media screen and (max-width: 600px){
+    .testimonialsHead h2{
+        font-size: 32px;
+    }
+}
+/* screens below 500px */
+@media screen and (max-width: 500px){
+    .testimonialsHead h2{
+        font-size: 28px;
+    }
+}

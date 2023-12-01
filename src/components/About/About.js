@@ -3,7 +3,20 @@ import React from 'react';
 import "./About.css";
 import "../../commonStyles.css";
 import giftIcon from "../../assets/gift.svg";
+import Carousel from '../Carousel/Carousel';
 const About = () => {
+
+    //variables
+    const cardsArray = [
+        {name: "98% Success Rate", icon: giftIcon},
+        {name: "Experienced Lawyers", icon: giftIcon},
+        {name: "Best of the best!", icon: giftIcon},
+        {name: "We're Cool", icon: giftIcon},
+        {name: "98% Success Rate", icon: giftIcon},
+        {name: "Experienced Lawyers", icon: giftIcon},
+        {name: "Best of the best!", icon: giftIcon},
+        {name: "We're Cool", icon: giftIcon},
+    ]
 
     //functions
     const displayCards = ()=>{
@@ -39,9 +52,10 @@ const About = () => {
             </article>
             <article className='whyChooseUs'>
                 <h2>Why Choose us?</h2>
-                <section className='whyChooseUsCard-wrapper'>
+                {/* <section className='whyChooseUsCard-wrapper'>
                     {displayCards()}
-                </section>
+                </section> */}
+                <Carousel cardsArray={cardsArray} sectionType={"about"}/>
             </article>
         </section>
     );

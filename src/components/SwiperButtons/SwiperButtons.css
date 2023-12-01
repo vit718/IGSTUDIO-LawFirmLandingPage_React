@@ -1,0 +1,100 @@
+
+.swiper-nav-btns{
+    position: absolute;
+    padding: inherit;
+    top: 8rem;
+    right: 10rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.swiperButton{
+    width: 90.6px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 0;
+    opacity: 0;
+    animation: appearDelay 500ms 500ms forwards;
+    overflow: hidden;
+}
+.swiperButton img{
+    width: 80%;
+    transition: all 250ms;
+}
+.swiperButton img:hover{
+    scale: 115%;
+}
+.swiperButtonNext{
+    background-color: var(--color-primary);
+}
+
+/* screens below 500px */
+@media screen and (max-width: 500px){
+    .swiperButtonPrev{
+        left: 2rem;
+    }
+    .swiperButtonNext{
+        right: 2rem;
+    }
+}
+/* screens below 400px */
+@media screen and (max-width: 400px){
+    .swiperButtonPrev{
+        left: 1rem;
+    }
+    .swiperButtonNext{
+        right: 1rem;
+    }
+}
+
+/* screens below 1375px */
+@media screen and (max-width: 1375px){
+    .swiper-nav-btns{
+        right: 8rem;
+    }
+}
+/* screens below 1100px */
+@media screen and (max-width: 1100px){
+    .swiper-nav-btns{
+        right: 5rem;
+    }
+}
+/* screens below 900px */
+@media screen and (max-width: 900px){
+    .swiper-nav-btns{
+        right: 3rem;
+        top: 6rem;
+    }
+    .swiperButton{
+        width: 60.6px;
+    }
+}
+/* screens below 500px */
+@media screen and (max-width: 500px){
+    .swiper-nav-btns{
+        right: 2rem;
+        top: 7rem;
+    }
+    .swiperButton{
+        width: 40.6px;
+    }
+}
+
+
+@keyframes appearDelay {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
