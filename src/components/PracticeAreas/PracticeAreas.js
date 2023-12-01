@@ -6,7 +6,7 @@ import "../../commonStyles.css";
 const PracticeAreas = () => {
     return (
         <section className='practiceAreas common-padding' id='practiceAreas'>
-            <h2>Area of Practices</h2>
+            <h2 className='common-h2'>Area of Practices</h2>
             <section className='grid'>
                 <div className='gridRow row1 oddRow'>
                     <div className='gridItem gridItem1 oddItem1'>BUSINESS LAW</div>

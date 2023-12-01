@@ -32,7 +32,7 @@ const Testimonials = () => {
     return (
         <section className='testimonials common-padding'>
             <section className="testimonialsHead">
-                <h2>
+                <h2 className='common-h2'>
                     <span>What says our</span>
                     <span>happy Clients</span> 
                 </h2>

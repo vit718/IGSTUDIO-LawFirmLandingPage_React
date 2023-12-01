@@ -43,7 +43,7 @@ const About = () => {
     return (
         <section className='about common-padding' id='about'>
             <article className='aboutIntro'>
-                <h2>Let’s Introduce Ourself</h2>
+                <h2 className='common-h2'>Let’s Introduce Ourself</h2>
                 <div className='introPartition'></div>
                 <section className='criminalLawyer'>
                     <h3>Criminal Lawyer</h3>
@@ -51,7 +51,7 @@ const About = () => {
                 </section>
             </article>
             <article className='whyChooseUs'>
-                <h2>Why Choose us?</h2>
+                <h2 className='common-h2'>Why Choose us?</h2>
                 {/* <section className='whyChooseUsCard-wrapper'>
                     {displayCards()}
                 </section> */}
