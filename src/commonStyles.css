@@ -7,6 +7,7 @@
     font-size: 54px !important;
     font-weight: 600 !important;
     line-height: 143.023% !important;
+    text-transform: capitalize !important;
 }
 /* screens below 1375px */
 @media screen and (max-width: 1375px){

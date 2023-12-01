@@ -7,6 +7,7 @@ import './App.css';
 import About from './components/About/About';
 import PracticeAreas from './components/PracticeAreas/PracticeAreas';
 import Testimonials from './components/Testimonials/Testimonials';
+import Team from './components/Team/Team';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <PracticeAreas />
       <Testimonials />
+      <Team />
     </main>
   );
 }

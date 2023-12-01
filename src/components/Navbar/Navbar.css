@@ -1,7 +1,7 @@
 
 nav{
     display: flex;
-    align-items: stretch;
+    /* align-items: flex-end; */
     justify-content: space-between;
     /* padding: 2rem 0; */
     text-transform: capitalize;
@@ -10,6 +10,8 @@ nav{
     background-color: #111;
     position: fixed;
     z-index: 20;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 .logoSpan {
     display: flex;

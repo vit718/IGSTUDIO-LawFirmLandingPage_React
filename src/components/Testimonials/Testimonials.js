@@ -1,6 +1,4 @@
 import React from 'react';
-//components
-import Card from '../Card/Card';
 //styles and assests
 import "./Testimonials.css";
 import "../../commonStyles.css";
