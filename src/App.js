@@ -9,6 +9,7 @@ import PracticeAreas from './components/PracticeAreas/PracticeAreas';
 import Testimonials from './components/Testimonials/Testimonials';
 import Team from './components/Team/Team';
 import FAQ from './components/FAQ/FAQ';
+import NewsLetter from './components/NewsLetter/NewsLetter';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Testimonials />
       <Team />
       <FAQ />
+      <NewsLetter />
     </main>
   );
 }
