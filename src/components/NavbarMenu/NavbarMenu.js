@@ -22,11 +22,11 @@ const NavbarMenu = () => {
             />
         </section>
         <section className={`menuItems ${prompt.className}`}>
-            <a href="/" className={`menuLink menuLink1  ${menuPosition}`}>Home</a>
-            <a href="/attorneys"  className={`menuLink menuLink2  ${menuPosition}`}>attorneys</a>
-            <a href="/practiceAreas"  className={`menuLink menuLink3  ${menuPosition}`}>practice Areas</a>
-            <a href="/about"  className={`menuLink menuLink4  ${menuPosition}`}>about</a>
-            <a href="/contact"  className={`menuLink menuLink5  ${menuPosition}`}>Contact us</a>
+            <a onClick={handleClick} href="#home" className={`menuLink menuLink1  ${menuPosition}`}>Home</a>
+            <a onClick={handleClick} href="#attorneys"  className={`menuLink menuLink2  ${menuPosition}`}>attorneys</a>
+            <a onClick={handleClick} href="#practiceAreas"  className={`menuLink menuLink3  ${menuPosition}`}>practice Areas</a>
+            <a onClick={handleClick} href="#about"  className={`menuLink menuLink4  ${menuPosition}`}>about</a>
+            <a onClick={handleClick} href="#"  className={`menuLink menuLink5  ${menuPosition}`}>Contact us</a>
             <section onClick={handleClick} className={`dummyForNavbarMenu ${menuPosition}`}></section>
         </section>
         </>

@@ -6,7 +6,7 @@ import attorneyImage from "../../assets/attorneyImageFront.svg"
 import emailIcon from "../../assets/emailIcon.svg"
 const Home = () => {
     return (
-        <section className='home common-padding'>
+        <section className='home common-padding' id='home'>
             <article className='homeTexts'>
                 <h1>
                     <span>You don’t have to</span>

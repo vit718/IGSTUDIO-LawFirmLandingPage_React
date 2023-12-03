@@ -36,7 +36,7 @@ const Team = () => {
         })
     }
     return (
-        <section className='team common-padding'>
+        <section className='team common-padding' id='attorneys'>
             <h2 className='common-h2'>Our Team</h2>
             <section className='teamList'>
                 {displayCards()}

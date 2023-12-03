@@ -2,7 +2,7 @@
 .about{
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     width: 100vw;
 }
 .aboutIntro{
@@ -16,7 +16,7 @@
     width: 45%;
 }
 .whyChooseUs{
-    padding-top: 2.5rem 0;
+    padding-top: 2rem;
 }
 .introPartition{
     height: 200px;
