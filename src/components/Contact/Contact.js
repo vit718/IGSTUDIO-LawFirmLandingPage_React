@@ -10,6 +10,7 @@ const Contact = props => {
     //functions
     const handleSubmit = e=> {
         e.preventDefault();
+        closeForm();
         alert("Message Sent!");
     }
     return (
