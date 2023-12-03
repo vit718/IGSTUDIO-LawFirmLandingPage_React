@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials/Testimonials';
 import Team from './components/Team/Team';
 import FAQ from './components/FAQ/FAQ';
 import NewsLetter from './components/NewsLetter/NewsLetter';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Team />
       <FAQ />
       <NewsLetter />
+      <Footer />
     </main>
   );
 }
