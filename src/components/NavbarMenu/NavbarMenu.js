@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 //styles and assetes
 import menuButton from "../../assets/navbarMenu.svg"
 import './NavbarMenu.css'
-const NavbarMenu = () => {
+const NavbarMenu = props => {
+    //props
+    const { handleContact } = props;
     //states
     const [menuPosition, setMenuPosition] = useState("");
     //functions
@@ -10,7 +12,10 @@ const NavbarMenu = () => {
         console.log("aaaa")
         setMenuPosition(pre=> pre === "menuCentre" ? "menuRight" : "menuCentre");
     }
-
+    const handleContactClick = ()=>{
+        handleClick();
+        handleContact();
+    } 
     return (
         <>
         <section className='menuButton'>
@@ -26,7 +31,7 @@ const NavbarMenu = () => {
             <a onClick={handleClick} href="#attorneys"  className={`menuLink menuLink2  ${menuPosition}`}>attorneys</a>
             <a onClick={handleClick} href="#practiceAreas"  className={`menuLink menuLink3  ${menuPosition}`}>practice Areas</a>
             <a onClick={handleClick} href="#about"  className={`menuLink menuLink4  ${menuPosition}`}>about</a>
-            <a onClick={handleClick} href="#"  className={`menuLink menuLink5  ${menuPosition}`}>Contact us</a>
+            <a onClick={handleContactClick} href="#"  className={`menuLink menuLink5  ${menuPosition}`}>Contact us</a>
             <section onClick={handleClick} className={`dummyForNavbarMenu ${menuPosition}`}></section>
         </section>
         </>
