@@ -1,0 +1,83 @@
+
+.faq h2{
+    margin-bottom: 2rem;
+}
+.faq-body{
+    display: flex;
+    align-items: flex-start;
+}
+
+.faq-para, .faq-accordian-details{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 162.523%;
+    /* opacity: 0.3; */
+    color: rgba(255, 255, 255, 30%) !important;
+}
+.faq-accordian{
+    margin-bottom: 2rem !important;
+    background-color: #1d1d1d !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 30%) !important;;
+}
+.faq-para, .faq-accordian-container{
+    width: 50%;
+    background-color: inherit !important;
+}
+.faq-accordian-summary{
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 24px;
+    color: white !important;
+    text-overflow: ellipsis !important; 
+}
+.faq-accordian-summary, .faq-accordian-details{
+    padding-bottom: 2rem !important;
+}
+
+.MuiAccordionSummary-expandIconWrapper{
+    color: var(--color-primary) !important;
+}
+
+/* screens below 900px */
+@media screen and (max-width: 900px){
+    .faq-body{
+        flex-direction: column;
+    }
+    .faq-para, .faq-accordian-container{
+        width: 100%;
+    }
+    .faq-para{
+        margin-bottom: 2rem;
+    }
+    .faq-accordian-summary, .faq-accordian-details{
+        padding-left: 0 !important;
+    }
+    .faq-accordian-summary{
+        font-size: 18px !important;
+    }
+    .faq-para, .faq-accordian-details{
+        font-size: 16px;
+    }
+}
+
+/* screens below 400px */
+@media screen and (max-width: 400px){
+    .faq h2{
+        margin-bottom: 1rem;
+    }
+    .faq-accordian-summary{
+        font-size: 16px !important;
+    }
+    .faq-para, .faq-accordian-details{
+        font-size: 14px;
+    }
+    .faq-accordian{
+        margin-bottom: 1rem !important;
+    }
+    .faq-accordian-summary, .faq-accordian-details{
+        padding-bottom: 1rem !important;
+    }
+}
