@@ -56,11 +56,13 @@
         opacity: 0;
         z-index: -1;
         transform: translateX(-50%) translateY(-10%);
+        display: none;
     }
     to{
         opacity: 1;
         z-index: 25;
         transform: translateX(-50%) translateY(0%);
+        display: flex;
     }
 }
 @keyframes appearOut {
@@ -68,10 +70,12 @@
         opacity: 1;
         z-index: 25;
         transform: translateX(-50%) translateY(0%);
+        display: flex;
     }
     to{
         opacity: 0;
         z-index: -1;
         transform: translateX(-50%) translateY(-10%);
+        display: none;
     }
 }
